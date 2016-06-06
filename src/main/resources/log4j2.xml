@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="MyApp" packages="">
+  <Appenders>
+    <Syslog name="bsd" host="localhost" port="514" protocol="UDP"/>
+  </Appenders>
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="bsd"/>
+    </Root>
+  </Loggers>
+</Configuration>
